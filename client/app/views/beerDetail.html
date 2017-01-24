@@ -1,0 +1,6 @@
+<div class="jumbotron">
+    <p>Id: {{vm.beer.id}}</p>
+    <p>Name: <input type="text" value="{{vm.beer.name}}" ng-model="vm.beer.name"></p>
+    <p>Description: <input type="text" value="{{vm.beer.description}}" ng-model="vm.beer.description"></p>
+    <button class="btn btn-success" ng-click="vm.save(vm.beer)">Save</button>
+</div>
