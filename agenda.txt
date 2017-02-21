@@ -6,3 +6,6 @@
     3.3 The other routes
     3.4 Refactoring to use a repository
     3.5 Refactoing to use Mongo?
+4. Slack apps
+    4.1 Types of slack bots
+    4.2 Giphy slack bot
