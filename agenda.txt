@@ -1,0 +1,8 @@
+1. Installation check
+2. What's the goal today
+3. Express
+    3.1 Create and start a server
+    3.2 First GET route
+    3.3 The other routes
+    3.4 Refactoring to use a repository
+    3.5 Refactoing to use Mongo?

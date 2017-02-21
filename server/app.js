@@ -2,7 +2,7 @@
 * @Author: herby
 * @Date:   2017-01-24 15:52:20
 * @Last Modified by:   Stefan Wirth
-* @Last Modified time: 2017-01-25 12:08:44
+* @Last Modified time: 2017-02-21 20:46:40
 */
 
 'use strict';
@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 //serves all routes under /api
-app.use('/api/beers', beerRoutes(mongoBeerRepositroy));
+app.use('/api/beers', beerRoutes(memoryBeerRepository));
 
 app.listen(PORT, function() {
     console.log('Server is listening on PORT ' + PORT);
