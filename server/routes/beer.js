@@ -2,7 +2,7 @@
 * @Author: herby
 * @Date:   2017-01-24 21:54:33
 * @Last Modified by:   Stefan Wirth
-* @Last Modified time: 2017-01-24 22:28:11
+* @Last Modified time: 2017-02-22 15:11:55
 */
 
 'use strict';
@@ -75,9 +75,9 @@ function BeerRouter(beerRepository) {
         beerRepository.destroy(id)
             .then(function(beer) {
                 if(!beer) {
-                    return res.status(404).json({});
+                    return res.status(NOT_FOUND).json({});
                 } else {
-                    return res.status(200).json({data: beer});
+                    return res.status(OK).json({data: beer});
                 }
             })
             .catch(function(err) {
